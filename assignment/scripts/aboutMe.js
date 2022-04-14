@@ -31,18 +31,18 @@ pets += 2;
 const allowedPets = 5;
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
 // if it's not true, console log "How about we stay home?"
-if ((adventurous = true)) {
-  console.log("Adventures are great!");
+if (adventurous) {
+  console.log("Adventures are great!", adventurous);
 } else {
-  console.log("How about we stay home?");
+  console.log("How about we stay home?", adventurous);
 }
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
 if ((luckyNumber = 2 && adventurous === true)) {
-  console.log("Roll the dice!");
+  console.log("Roll the dice!", luckyNumber, adventurous);
 } else {
-  console.log(`Don't roll the dice!`);
+  console.log(`Don't roll the dice!`, luckyNumber, adventurous);
 }
 // 15 - Write a conditional that console logs "I can have more pets!"
 //if the value of `pets` is less than the value of `allowedPets`,
@@ -50,11 +50,11 @@ if ((luckyNumber = 2 && adventurous === true)) {
 // and console logs "Oh no, I have too many pets!"
 // if the value of `pets` is greater than the value of `allowedPets`.
 if (pets < allowedPets) {
-  console.log("I can have more pets!");
+  console.log("I can have more pets!", allowedPets);
 } else if ((pets = allowedPets)) {
-  console.log("I have enough pets");
+  console.log("I have enough pets", allowedPets);
 } else {
-  console.log("Oh no, I have too many pets!");
+  console.log("Oh no, I have too many pets!", allowedPets);
 }
 // STRETCH GOALS:
 
